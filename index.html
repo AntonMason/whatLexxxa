@@ -1,0 +1,54 @@
+﻿<meta name="viewport" content="width=device-width, initial-scale=0.6, maximum-scale=0.6, user-scalable=no">
+
+<head>
+    <title>Шо с Лёхай?</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body id="mybody">
+    <img class="load" src="non.gif">
+    <img class="load" src="non.gif" style="background:url('boss.png');">
+    <img class="load" src="non.gif" style="background:url('blin.png');">
+    <center>
+        <div id="scor">
+            Шо с Лёхай?
+        </div>
+
+        <div id="loadingDiv" class="message">
+            Загрузка игры...
+        </div>
+
+        <div id="startB" class="message">
+            <span id="bestS" style="color: #53E677;">...</span>
+            <br> Any resemblance to reality is purely coincidental.
+            <br> Warning! The game can cause nezdat' sessiy.
+            <br> ...
+            <br> КЛИКАЙ НА ЛЁХУ ШОБ ОН УЧИЛ ЯВУ
+            <br>
+            <img id="startBlin" style="cursor:pointer;" width="150" height="150" onClick="startGame();startB.style.display='none';"
+            src="blinStart.png">
+        </div>
+
+        <div id="soundB" onClick="sndC()">♫ включён</div>
+        <div id="plate">
+
+            <img width="150" height="150" class="ene" id="mob1" src="boss.png">
+            <img width="150" height="150" class="ene" id="mob2" src="boss java.png">
+            <img width="150" height="150" class="ene" id="mob3" src="boss.png">
+            <br>
+            <img width="150" height="150" class="ene" id="mob4" src="blin java.png">
+            <img width="150" height="150" class="ene" id="mob5" src="blin.png">
+            <img width="150" height="150" class="ene" id="mob6" src="blin java.png">
+        </div>
+    </center>
+</body>
+
+<script>
+    loadingDiv.style.display = "block";
+
+</script>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="jQueryRotate.js"></script>
+<script type="text/javascript" src="device.min.js"></script>
+<script type="text/javascript" src="ion.sound.min.js"></script>
+<script type="text/javascript" src="game.js"></script>
