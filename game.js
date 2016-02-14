@@ -141,7 +141,7 @@ var setRoateAngleForDevice = function (obj, mid) {
         }, false);
     } else {
         window.roateMax = 180;
-        obj.addEventListener('click', function (event) {
+        obj.addEventListener('mousedown', function (event) {
             killmob(mid);
         }, false);
     }
