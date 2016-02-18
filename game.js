@@ -130,7 +130,7 @@ var setRoateAngleForDevice = function (obj, mid) {
             killmob(mid);
         }, false);
     } else {
-        window.roateMax = 180;
+        window.roateMax = 340;
         obj.addEventListener('mousedown', function (event) {
             killmob(mid);
         }, false);
@@ -145,7 +145,7 @@ var startGame = function () {
     window.enCount = 6;
     window.tecmob = getrand(1, enCount);
     window.score = 0;
-    window.time = 850;
+    window.time = 750;
     window.image = "blin";
     window.lifes = 4;
     window.vigovor = false;
