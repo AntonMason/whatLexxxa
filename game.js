@@ -107,7 +107,7 @@ var snowhide = function () {
         score--;
         updateDifficultyTimer();
         if (game) {
-            lifes--; if (sound) { ion.sound.play("hey"); } if (score == 14) {game = false; lifes = 4; image = "blin";}
+            lifes--; if (sound) { ion.sound.play("hey"); } if (score == 14) { game = false; lifes = 4; image = "blin"; }
         } else {
             vigovor = true;
         }
@@ -116,17 +116,7 @@ var snowhide = function () {
     for (var i = 6; i >= 1; i--) {
         hidemob(i);
     }
-    if (game) {
-        switch (getrand(0, 1)) {
-            case 0: if (prevMob === 1) { prevMob++ } else { prevMob-- }
-                break
-            case 1: if (prevMob === 6) { prevMob-- } else { prevMob++ }
-                break
-        }
-        tecmob = prevMob;
-    } else {
-        tecmob = getrand(1, enCount);
-    }
+    tecmob = getrand(1, enCount);
     snowmob(tecmob);
     if (lifes != 0) {
         window.timeC = setTimeout(snowhide, time);
