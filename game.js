@@ -7,7 +7,8 @@ $('img').each(function () {
 
 ion.sound({
     sounds: [
-        { name: "hey" }
+        { name: "hey" },
+        { name: "punch" }
     ],
     path: "",
     preload: true,
@@ -85,6 +86,7 @@ var killmob = function (mid, pos) {
             allEn[mid - 1].style.background = "url('blin java.png')";
         else
             allEn[mid - 1].style.background = "url('boss java.png')";
+        if (sound) { ion.sound.play("punch"); }
         score++;
         updateDifficultyTimer();
         changeWord();
